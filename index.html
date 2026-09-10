@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Emily's Portfolio</title>
+</head>
+
+<body>
+
+  <!--header and navigation-->
+  <header>
+    <h1><a href="index.html">Emily Kruse</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="./assets/images/Emily-Kruse-Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--hero-->
+  <section class="hero">
+    <img src="./assets/images/AvatarEmily.png" alt="Cartoon avatar resembling Emily Kruse"/>
+    <h2>decoding biology through data science</h2>
+  </section>
+
+  <main class="row">
+  <!--about me section-->
+    <div class="col-12 col-lg-8">
+      <section id="about-me" class="intro">
+        <h3 class="section-title">About Me</h3>
+        <p>
+          Hi! I just finished my Master's degree in Data Science with a focus on health/medical data and 
+          statistics using R and Python. I have extensive experience in a clinical oncology cytogenetics 
+          laboratory and a strong molecular biology background. Through my recent projects, I developed 
+          skills in Linux, data visualization, regression analysis, and statistics. I am passionate about 
+          cancer biology, epigenetics, and personalized medicine. I am currently seeking a 
+          bioinformatician/NGS analyst role.
+        </p>
+      </section>
+
+      <!--projects section-->
+      <section id="projects" class="projects">
+        <h3 class="section-title">Projects</h3>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card project text-center">
+              <img class="card-img-top" src="./assets/images/DailyUsageAgeMHInteractionPlot.png" alt="Plot showing the effects of interactions between daily smartphone usage and age on mental health">
+              <div class="card-body">
+                <h5 class="card-title">Mental Health and Smartphone Use</h5>
+                <p class="card-text">Data analysis and interpretation using statistics, correlations, multiple linear regression, and ANOVA</p>
+                <a href="https://docs.google.com/document/d/1L1hPk2wsFZ8mYc64WqVPVlX5W2Px9PNrWYg-Eh5W-D4/edit?usp=sharing" target="_blank" class="btn btn-primary">View Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card project text-center">
+              <img class="card-img-top" src="./assets/images/timeseriesplot.png" alt="Time series plot showing unemployment rates over time in select states">
+              <div class="card-body">
+                <h5 class="card-title">Relationship Between Crime and Unemployment</h5>
+                <p class="card-text">Report on process and insights from EDA on crime and unemployment data</p>
+                <a href="https://emilyk221.github.io/crime-unemployment-relationship/" target="_blank" class="btn btn-primary">Visit site</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card project text-center">
+              <img class="card-img-top" src="./assets/images/phylotree.png" alt="Phylogenetic tree showing clonal relationships between bacterial strains">
+              <div class="card-body">
+                <h5 class="card-title">Bacterial Outbreak Analysis</h5>
+                <p class="card-text">Identified clonal strains/phylogenetic relationships using online bioinformatics tools</p>
+                <a href="https://docs.google.com/presentation/d/1nctpLOUSiq0PgsB6SZl55EwrlU9XM0DGjsQraMKp_wE/edit?usp=sharing" target="_blank" class="btn btn-primary">View Presentation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card project text-center">
+              <img class="card-img-top" src="./assets/images/video.png" alt="Screenshot of powerpoint title slide and video presentation">
+              <div class="card-body">
+                <h5 class="card-title">Sample Video Presentation</h5>
+                <p class="card-text">Video presentation of findings and interpretations</p>
+                <a href="https://www.loom.com/share/65acf5fecd9440b8aed62cecc1c11262" target="_blank" class="btn btn-primary">View video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="col-12 col-lg-4">
+      <!--contact me section-->
+      <section id="contact-me" class="contact">
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-links">
+          <i class="fa-solid fa-phone icon"></i><a href="tel:979.229.0519">979.229.0519</a><br />
+          <i class="fa-solid fa-envelope"></i><a href="mailto:emily.g.kruse@gmail.com">emily.g.kruse@gmail.com</a><br />
+          <i class="fa-brands fa-linkedin"></i><a href="http://www.linkedin.com/in/emily-g-kruse">LinkedIn</a><br />
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

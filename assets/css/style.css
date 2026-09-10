@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #12192a;
+  --secondary-color: #7bbb9b;
+  --tertiary-color: #ecf0f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+}
+
+/* begin header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 36px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 a {
+  color: var(--primary-color);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  margin-top: 15px;
+  height: 60px;
+}
+
+header nav ul li a {
+  padding: 1px 5px;
+  margin: 10px;
+  color: var(--secondary-color);
+  border-bottom: solid 3px var(--secondary-color);
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+}
+/* end header styles */
+
+/* begin hero styles */
+.hero {
+  background-image: url("..//images/DNA-puzzle.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-origin: border-box;
+  background-position: center;
+  padding: 0 25px 25px;
+  height: 390px;
+}
+
+.hero h2 {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  width: 85%;
+  border-radius: 8px;
+}
+
+.hero img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 25px 25px 30px 25px;
+}
+/* end hero styles */
+
+/* begin about me styles */
+.intro p {
+  text-align: center;
+  padding: 15px 15px 0 15px;
+}
+/*end about me section styles */
+
+/* all section titles */
+.section-title {
+  margin: auto;
+  padding: 10px 0 0 0;
+  width: fit-content;
+  border-bottom: solid 3px var(--primary-color);
+}
+
+/* begin projects section styles */
+.project {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.btn-primary {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+/* end projects section styles */
+
+/* begin contact section styles */
+.icon {
+  color: var(--primary-color);
+}
+
+.contact-links {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.contact a {
+  font-size: 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1px 5px;
+  margin: 10px;
+  border-bottom: 3px solid var(--primary-color);  
+}
+
+.contact a:hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border-radius: 5px;
+}
+/* end contact section styles */
+
+/* Media queries for tablets and larger */
+@media screen and (min-width: 575px) {
+  .hero {
+    justify-content: space-between;
+    height: 350px;
+  }
+
+  .hero h2 {
+    width: 50%;
+    align-self: flex-end;
+  }
+}
+
+/* Media queries for tablets and small desktops and larger*/
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 350px;
+  }
+
+  .hero h2 {
+    width: 50%;
+  }
+}
+
+/* Media queries for desktops and larger */
+@media screen and (min-width: 980px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;    
+  }
+
+  header h1 {
+    width: auto;
+    padding: 10px 20px 10px 60px;
+    margin: 20px 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    width: auto;
+    margin: 0;
+  }
+
+  .hero {
+    padding: 20px 50px;
+  }
+
+  .hero img {
+    width: 250px;
+    height: 250px;
+  }
+}
